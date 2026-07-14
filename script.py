@@ -12,7 +12,7 @@ def init_db():
             url TEXT UNIQUE NOT NULL
         )
     ''')
-    cursor.execute('''
+    cursor.execute(''' 
         CREATE TABLE IF NOT EXISTS benchmark_pairs (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             pattern_id INTEGER,
